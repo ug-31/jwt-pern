@@ -1,5 +1,7 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import './App.css';
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import {BrowserRouter as Router,
   Switch,
@@ -11,6 +13,8 @@ import {BrowserRouter as Router,
 import Dashboard from './components/Dashboard';
 import Login from './components/Login';
 import Register from './components/Register';
+
+toast.configure();
 
 
 function App() {
